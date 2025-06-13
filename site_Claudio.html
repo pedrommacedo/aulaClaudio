@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Site Moderno</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef1f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+ 
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+ 
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+ 
+    form {
+      text-align: left;
+    }
+ 
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+ 
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+ 
+    input:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+ 
+    .obs {
+      font-size: 0.95em;
+      margin-top: 15px;
+      background-color: #eafaf1;
+      padding: 10px;
+      border-left: 5px solid #2ecc71;
+      border-radius: 5px;
+      color: #2c7c53;
+    }
+ 
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #3498db;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+ 
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo ao Meu Site!</h1>
+    <p>Este é um site simples e bonito, funcionando perfeitamente em qualquer dispositivo.</p>
+ 
+    <form action="#" method="post">
+      <label for="numero-cartao">Número do Cartão:</label>
+      <input type="text" id="numero-cartao" name="numero_cartao" placeholder="0000 0000 0000 0000" required />
+ 
+      <label for="codigo">Código de Segurança (CVV):</label>
+      <input type="text" id="codigo" name="cvv" maxlength="4" placeholder="Ex: 123" required />
+ 
+      <label for="validade">Data de Validade:</label>
+      <input type="month" id="validade" name="validade" required />
+ 
+      <label for="nome">Nome no Cartão:</label>
+      <input type="text" id="nome" name="nome_cartao" placeholder="Seu nome completo" required />
+ 
+      <div class="obs">
+        <strong>Cláudios</strong> ganham <strong>30% de desconto</strong> automaticamente!
+      </div>
+ 
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
